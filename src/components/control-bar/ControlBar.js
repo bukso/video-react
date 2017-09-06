@@ -148,10 +148,9 @@ export default class ControlBar extends Component {
     const children = this.getChildren();
     return (
       <div
-        className={classNames('video-react-control-bar', {
-          'video-react-control-bar-auto-hide': autoHide,
-          className
-        })}
+        className={[classNames('video-react-control-bar', {
+          'video-react-control-bar-auto-hide': autoHide
+        }) + ' ' + className]}
       >
         {children}
       </div>
